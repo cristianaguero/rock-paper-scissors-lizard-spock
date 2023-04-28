@@ -1,0 +1,147 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #8b8b8b;
+
+
+    /* 
+    font-family:'Amatic SC', cursive;
+    font-family:'Delicious Handrawn', cursive;
+    font-family: 'Roboto', sans-serif;
+    */
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(0,0,0);
+    background: rgb(139,139,139);
+    background: radial-gradient(circle, rgba(139,139,139,1) 72%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+/* Typography */
+
+h1 {
+    font-size: 6rem;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 1px 0px; 
+    grid-template-areas: 
+      "rules game score";
+    text-align: center; 
+  }
+
+.rules { 
+    grid-area: rules; 
+    min-width: 25rem;
+}
+
+.score { 
+    grid-area: score; 
+}
+
+.rules, .score {
+    text-align: left;
+    padding: 3rem;
+    margin-left: 2rem;
+    color: var(--white);
+    font-family: 'Amatic SC', cursive;
+    font-size: 3rem;
+}
+
+
+.game { 
+    grid-area: game;
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    
+}
+
+.game img {
+    width: 40rem;
+    height: auto;
+    
+}
+
+.buttons__game button, .restart {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    width: 20rem;
+
+}
+
+
+.choice__game {  
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr .5fr;
+    grid-auto-columns: 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "user__choice computer__choice"
+      "result result";
+  }
+     
+
+
+  
+  .result { 
+    grid-area: result; 
+}
+  
+  .user__choice { 
+    grid-area: user__choice; 
+    width: 40rem;
+    height: 40rem;
+}
+  
+  .computer__choice { 
+    grid-area: computer__choice; 
+    width: 40rem;
+    height: 40rem;
+}
+
+
+.result, .result_shown {
+    font-size: 5rem;
+}
+  

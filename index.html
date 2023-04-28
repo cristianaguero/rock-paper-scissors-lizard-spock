@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPSLS</title>
+    <link rel="stylesheet" href="css/styles.css" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <header class="header">
+        <img src="img/rpsls.jpg" alt="rock paper scissors lizar spock">
+
+        <h1 class="title"> Rock Paper Scissors Lizard Spock</h1>
+    </header>
+
+    <section class="container">
+        <main class="game">
+            <div class="buttons__game">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
+                <button class="lizard">Lizard</button>
+                <button class="spock">Spock</button>
+            </div>
+            <div class="choice__game">
+                <div class="user__choice">
+                    <img src="img/ready.png" alt="">
+                    <p>Your Choice</p>
+                </div>
+                <div class="computer__choice">
+                    <img src="img/ready.png" alt="">
+                    <p>Computer's Choice</p>
+                </div>   
+                <p class="result">Result: <span class="result_shown">...</span></p>        
+            </div>
+        </main>
+
+        <aside class="score">
+            <div class="score__result">
+                <h2>Score:</h2>
+                <p>Winning: <span class="win">0</span></p>
+                <p>Losses: <span class="lost">0</span></p>
+                <p>draws: <span class="draw">0</span></p>
+                <p>Total: <span class="total">0</span></p>
+            </div>
+            <div class="buttons__result">
+                <button class="restart">Restart</button>
+            </div>
+        </aside>
+
+        <aside class="rules">
+            <h2>Rules:</h2>
+            <ul>
+                <li>Scissors cut paper</li>
+                <li>Paper covers rock</li>
+                <li>Rock crushes lizard</li>
+                <li>Lizard poisons Spock</li>
+                <li>Spock smashes scissors</li>
+                <li>Scissors decapitate lizard</li>
+                <li>Lizard eats paper</li>
+                <li>Paper disproves Spock</li>
+                <li>Spock vaporizes rock</li>
+                <li>and as it always has, Rock crushes scissors</li>
+            </ul>
+        </aside>
+    </section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
